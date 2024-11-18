@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: "Great Vibes", cursive;
+
+}
+
+:root {
+    --cor-de-fundo: #b2b39f;
+    --cor-de-fundo-header: white;
+    --branco: White;
+    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cor-de-fundo);
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.LogoGracilianoRamos {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 5rem;
+    border: 2px solid #c49c3c;
+}
+
+.itens {
+    padding: 1rem;
+}
+
+.cabecalho_menu_hamburguer {
+    width: 4rem;
+    height: 4rem;
+    background-image: url("img/Menu.svg");
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    background-color: gray;
+    padding: 1rem;
+
+}
+
+.container__botao:checked~.lista-menu {
+    display: block;
+    grid-auto-flow: column;
+
+}
+
+.container__botao {
+    display: none;
+}
+
+.banner {
+    background-color: #3d423cc0;
+    color: white;
+    text-align: center;
+    padding: 2.5rem 2rem;
+}
+
+.banner_titulo {
+    font-size: 4rem;
+    font-weight: 700;
+
+}
+
+.banner_texto {
+    font-size: 2rem;
+    font-weight: 500;
+    color: black;
+
+}
+
+.banner_pesquisa {
+    background-color: transparent;
+    height: 2rem;
+    color: white;
+    border: 0.2rem solid white;
+    border-radius: 1rem;
+    padding: 1em;
+}
+
+.banner_pesquisa {
+    text-align: center;
+    background: url(img/Lupa.svg) no-repeat;
+    vertical-align: center;
+    background-position: 1rem;
+}
+
+.carrossel_titulo {
+    text-align: center;
+    font-size: 4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    background-color: white;
+    color: orangered;
+    text-transform: uppercase;
+}
+
+.swiper-slide img {
+    width: 30%;
+
+}

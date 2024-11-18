@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="img/Logo/Logo.jpeg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>Graciliano Ramos</title>
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <div>
+                <input type="checkbox" id="menu" class="container__botao">
+                <label for="menu">
+                    <span class="cabecalho_menu_hamburguer"></span>
+
+                </label>
+                <ul class="lista-menu">
+                    <div>
+                        <l1 class="Lista-menu__titulo">.Categorias</l1>
+
+                    </div>
+
+                    <div>
+                        <l1 class="Lista-menu-menu__link">.Vestibular</a>
+                        </l1>
+
+                    </div>
+
+                    <div>
+                        <l1 class="Lista-menu__item">
+                            <a href="#" class="lista-menu__link">.Motivacional</a>
+                        </l1>
+                    </div>
+
+                    <div>
+                        <l1 class="Lista-menu__item">
+                            <a href="#" class="lista-menu__link">.Infraestrutura</a>
+                        </l1>
+                    </div>
+
+                    <div>
+                        <l1 class="Lista-menu__item">
+                            <a href="#" class="lista-menu__link">.Business</a>
+                        </l1>
+                    </div>
+
+                    <div>
+                        <l1 class="Lista-menu__item">
+                            <a href="#" class="lista-menu__link">.Desing & UX</a>
+                        </l1>
+                    </div>
+
+                </ul>
+            </div>
+            <img class="LogoGracilianoRamos" src="img/Logo/Logo.jpeg" alt="Logo">
+
+            <div class="FavCompC[Usus]">
+                <a class="itens" href="#"><img src="img/Icones/Favoritos.svg" alt="Meus favoritos"></a>
+                <a class="itens" href="#"><img src="img/Icones/Compras.svg" alt="Minhas compras"></a>
+                <a class="itens" href="#"><img src="img/Icones/Usuario.svg" alt="Meu Usuario"></a>
+
+            </div>
+
+        </header>
+
+        <section class="banner">
+            <h2 class="banner_titulo">
+                Encontre tudo que você precisa aqui, em um só lugar
+            </h2>
+
+            <p class="banner_texto">
+                Encontre em nossa biblioteca tudos os livros mais pedidos dos vestibulares!
+
+            </p>
+            <input type="search" class="banner_pesquisa" placeholder="Qual será sua proxima leitura?">
+
+        </section>
+
+        <selection class="carrossel">
+            <h2 class="carrossel_titulo">
+                Novos Lançamentos
+
+            </h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/Livros/Vestibular/VidasSecas.jpeg "> </div>
+                    <div class="swiper-slide"><img src="img/Livros/Motivacional/ResolvaAPorraDosSeusProblemas.jpg ">
+                    </div>
+                    <div class="swiper-slide"><img src="img/Livros/Motivacional/ETudoUmaQuestaoDeDesequilibrio.jpg">
+                    </div>
+                    <div class="swiper-slide"><img src="img/Livros/Vestibular/AVidaNaoEUtil.jpeg "> </div>
+                    <div class="swiper-slide"><img src="img/Livros/Motivacional/HistoriasParaAdultosEstressados.jpg ">
+                    </div>
+
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+
+        </selection>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        
+        <script>
+            const swiper = new Swiper('.swiper', {
+                spaceBetween: 10,
+                slidePerview: 3,
+                
+            });
+
+        </script>
+
+    </main>
+
+</body>
+
+</html>
